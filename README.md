@@ -1,7 +1,6 @@
 # Very short description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/thearyanahmed/ppp.svg?style=flat-square)](https://packagist.org/packages/thearyanahmed/ppp)
-![GitHub Actions](https://github.com/thearyanahmed/ppp/actions/workflows/main.yml/badge.svg)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -30,12 +29,24 @@ Available methods
     public function getMainCurrencySymbol() : string
     public function getPppConversionFactor() : float
     public function getPPP() : float
+    public function isSuccessful() : bool # will always return true
 
 # ErrorResponse
     public function getMessage() : string
+    public function isSuccessful() : bool # will always return false
 ```
 
-If it's not a HTTP 200 request, it'll throw an generic exception.
+If it's not a HTTP 200 request,**** it'll throw an generic exception.
+
+## Usage
+```php
+   $response = (new Request)->fetchPPP('DE');
+
+   if($response->isSuccessful()) {
+        $discountPrice = $response->getPppConversionFactor() * $originalPrice;
+   }
+
+```
 
 ## Contributing
 

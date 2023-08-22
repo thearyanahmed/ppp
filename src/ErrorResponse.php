@@ -15,4 +15,9 @@ class ErrorResponse
     {
         return $this->data['message'];
     }
+
+    public function isSuccessful() : bool
+    {
+        return false;
+    }
 }

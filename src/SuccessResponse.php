@@ -40,4 +40,9 @@ class SuccessResponse
     {
         return $this->data['ppp']['ppp'];
     }
+
+    public function isSuccessful() : bool
+    {
+        return true;
+    }
 }
