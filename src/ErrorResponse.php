@@ -11,7 +11,7 @@ class ErrorResponse
         $this->data = $data;
     }
 
-    public function message()
+    public function getMessage() : string
     {
         return $this->data['message'];
     }
