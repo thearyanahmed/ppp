@@ -1,0 +1,42 @@
+{
+    "name": "thearyanahmed/ppp",
+    "description": "Integrate the Purchasing Power Parity API into your online products and services, enabling you to offer affordable pricing globally.",
+    "keywords": [
+        "thearyanahmed",
+        "ppp"
+    ],
+    "homepage": "https://github.com/thearyanahmed/ppp",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Aryan Ahmed",
+            "email": "thearyanahmed@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thearyanahmed\\Ppp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Thearyanahmed\\Ppp\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
