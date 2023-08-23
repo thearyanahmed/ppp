@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/thearyanahmed/ppp.svg?style=flat-square)](https://packagist.org/packages/thearyanahmed/ppp)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Implementation of [https://purchasing-power-parity.com](https://purchasing-power-parity.com/) using PHP.
 
 ## Installation
 
